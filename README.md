@@ -1,3 +1,21 @@
+# 11-711 Advanced Natural Language Processing Project
+
+### Team Members : Abhishek Kumar, Deep Karkhanis, Nilay Pande
+
+
+### Reproduced results obtained the paper
+Here are the evaluation numbers for the provided checkpoints:
+
+| Dataset | Results      | Metric             |
+| ------- | ------------ | ------------------ |
+| Django  | 81.1         | Exact Match Acc.   |
+| CoNaLa  | 33.19        | Corpus BLEU        |
+
+
+
+
+
+
 # Code generation from natural language with less prior and more monolingual data (TAE)
 
 Paper published in [ACL 2021](https://aclanthology.org/2021.acl-short.98/)
