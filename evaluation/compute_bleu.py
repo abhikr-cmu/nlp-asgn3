@@ -115,6 +115,11 @@ def compute_bleu(translation_corpus, dataset_object, section, args, max_order=4,
         else:
             reference = dataset_object[index]['snippet']
 
+        print("--------- B -----------")
+        print(dataset_object[index])
+        print("Generated  translation")
+        print(translation)
+
         if args.python is True and args.translate_backward is False:
             slot_map = dataset_object[index]['slot_map']
             ref = Conala.decanonicalize_code(reference, slot_map)

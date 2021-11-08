@@ -50,6 +50,10 @@ def compute_metric(translation_corpus, dataset_name, split, tokenizer=None, sect
             annotated_data = json.loads(annotated_dataset_object[index])
         tokenized_source = tokenizer.encode(reference, padding=True, truncation=True, return_tensors="pt")[0]
         if isinstance(translation, dict):
+            print("got:")
+            print(translation['token'])
+            print("source:")
+            print(tokenized_source.to('cuda'))
             if is_equal(translation['token'], tokenized_source.to('cuda')):
                 exact_match_acc += 1
             else:
@@ -57,6 +61,10 @@ def compute_metric(translation_corpus, dataset_name, split, tokenizer=None, sect
             translation = translation['str']
             translation_corpus[index] = translation
         else:
+            print("got:")
+            print(translation[0]['token'])
+            print("source:")
+            print(tokenized_source)
             if is_equal(translation[0]['token'], tokenized_source):
                 exact_match_acc += 1
             else:
