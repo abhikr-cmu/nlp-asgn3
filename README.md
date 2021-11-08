@@ -1,9 +1,9 @@
 # 11-711 Advanced Natural Language Processing Project
 
-### Team Members : Abhishek Kumar, Deep Karkhanis, Nilay Pande
+#### Team Members : Abhishek Kumar, Deep Karkhanis, Nilay Pande
 
 
-### Reproduced results obtained the paper
+### We have reproduced results mentioned in the paper
 Here are the evaluation numbers for the provided checkpoints:
 
 | Dataset | Results      | Metric             |
